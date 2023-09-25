@@ -1,9 +1,3 @@
-.logo {
-  display: inline-block;
-  overflow: auto;
-}
-
-
 h5 {
   color: grey;
 
@@ -20,31 +14,58 @@ h5 {
 }
 
 header {
-  background-color: white; /* Cor de fundo do menu */
-  color: black; /* Cor do texto do menu */
-  padding: 10px; /* Espaçamento interno do menu */
-  position: fixed; /* Fixar o menu no topo */
-  top: 0; /* Fixar no topo da página */
+  background-color: white;
+  /* Cor de fundo do menu */
+  color: black;
+  /* Cor do texto do menu */
+  padding: 10px;
+  /* Espaçamento interno do menu */
+  position: fixed;
+  /* Fixar o menu no topo */
+  top: 0;
+  /* Fixar no topo da página */
   left: 0;
   right: 0;
-  z-index: 1000; /* Z-index para manter o menu acima do conteúdo */
+  z-index: 1000;
+  /* Z-index para manter o menu acima do conteúdo */
   height: 20%;
   display: contents;
 
 }
+
 main {
   margin-top: 20px;
 }
 
 
-.pre-text-scost{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* configuração da pagina inicial*/
+
+
+.pre-text-scost {
   margin-left: 10px;
   margin-right: 10px;
- /* background-color: #036f2a; */
+  /* background-color: #036f2a; */
 }
 
-.text-scost{
-  
+.text-scost {
+
   margin: 20px;
   border-color: black;
   position: relative;
@@ -52,8 +73,18 @@ main {
   /*background-color: #f71616;*/
 
 
-  
-  
+
+
+}
+
+/* configurando o texto e a foto de bp no index */
+.text-scost {
+  width: 90%;
+  height: 50vh;
+  /* Defina a altura do contêiner .text-scost para 50% da altura da janela de visualização */
+  float: left;
+  text-align: justify;
+
 }
 
 .text-scost h2 {
@@ -62,11 +93,49 @@ main {
   font-family: 'Times New Roman', Times, serif;
   align-self: center;
   text-decoration: solid;
-}
-.text-scost p {
-  text-align: center;
+  text-align-last: center;
+
 }
 
+.pre-text-scost {
+
+  width: 48%;
+  float: left;
+  height: 50vh;
+}
+
+.bp {
+  width: 50%;
+  float: right;
+
+}
+
+aside img {
+  width: 50%;
+  height: 50vh;
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* configuração da pagina nossa historia*/
 .historia {
   height: 80%;
   align-self: end;
@@ -77,39 +146,52 @@ main {
 
 
 
-  /* Estilize o lado esquerdo como desejar */
-  .informacoes {
-    float: left;
-    width: 50%; /* Ajuste a largura conforme necessário */
-    padding: 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* configuração da pagina contatos */
+.informacoes {
+  float: left;
+  width: 50%;
+  padding: 20px;
 }
 
-/* Estilize o lado direito (iframe do mapa) */
+
 .mapa {
-    float: right;
-    width: 50%; /* Ajuste a largura conforme necessário */
-    height: 500px; /* Ajuste a altura conforme necessário */
-
+  float: right;
+  width: 50%;
+  height: 500px;
 }
 
-/* carrosel inicial*/ 
-body .carousel-inner  {
- width: 100%;
- height: 500px;
+.carousel-inicial {
+  height: 70vh;
 }
 
 
-
-
+body .carousel-inner {
+  width: 100%;
+  height: 70vh;
+}
 
 .imgc {
   width: 100%;
-  height: 500px
-} 
+  height: 70vh;
+}
 
 .leg-car {
   background-color: rgba(0, 0, 0, 0.4);
-  align-items:center ;
+  align-items: center;
 }
 
 .leg-car h5 {
@@ -136,7 +218,30 @@ body .carousel-inner  {
 
 
 
+/* configuração da pagina escotismo */
 
+.videoescoteiro {
+  align-items: center;
+  margin: 5px;
+}
+
+.videoescoteiro iframe {
+  margin: 5px;
+  width: 100%;
+  height: 400px;
+  align-items: center;
+
+}
+
+
+
+.title-ramos {
+  margin: 5px;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+
+}
 
 /* carrosel dos ramos */
 @-webkit-keyframes slidein {
@@ -200,7 +305,7 @@ body #scene {
   display: flex;
   align-items: center;
   justify-content: left;
-  width: 1000px;
+  width: 100%;
   height: 400px;
   position: absolute;
   top: 0;
@@ -215,7 +320,7 @@ body #scene {
   overflow: hidden;
   width: 100%;
   z-index: 2;
-;
+  ;
 
 }
 
@@ -298,7 +403,7 @@ body #scene #left-zone .list li.item input[type=radio]~label.label_senior:before
   background-size: 75% 75%;
   background-repeat: no-repeat;
   align-items: center;
-  
+
 }
 
 body #scene #left-zone .list li.item input[type=radio]~label.label_pioneiro:before {
@@ -341,7 +446,7 @@ body #scene #left-zone .list li.item input[type=radio]~.content.content_lobinho 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
+
 }
 
 body #scene #left-zone .list li.item input[type=radio]~.content.content_lobinho h1 {
@@ -453,8 +558,18 @@ body #scene #right-zone {
 
 
 
-@media screen and (max-width: 768px ) {
-  .logo-inicial{
+
+
+
+
+
+
+
+
+
+/* resposividade */
+@media screen and (max-width: 768px) {
+  .logo-inicial {
     display: none;
   }
 
@@ -463,7 +578,33 @@ body #scene #right-zone {
     z-index: 5;
     ;
   }
-  .mapa iframe{
-   width: 100%;
+
+  .mapa iframe {
+    width: 100%;
   }
+
+
+
+
+  /* index*/
+  .bp {
+    display: none;
+  }
+
+  .pre-text-scost {
+    width: 100%;
+  }
+
+header {
+  margin-top: 100px;
+  padding-top: 10px;
+}
+
+
+
+
+
+
+  
+
 }

@@ -12,6 +12,24 @@
 </head>
 
 <body>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1929043394137413',
+        xfbml      : true,
+        version    : 'v18.0'
+      });
+      FB.AppEvents.logPageView();
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
   <header>
     <div class="row">
       <img src=".//img/logo.png" alt=" GEAR 14 BIS" class="img-fluid col-md-1 ml-4 mr-auto mt-3 logo-inicial">
@@ -34,9 +52,7 @@
             <li class="nav-item">
               <a class="nav-link " href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="fotos.html">Fotos e videos</a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="historia.html">Nosso Historia</a>
             </li>
